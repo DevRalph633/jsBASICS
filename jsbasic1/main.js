@@ -16,10 +16,10 @@ function calculate() {
         dif = parseInt(num1Txt.value) - parseInt(num2Txt.value);
         resultTxt2.innerHTML = dif;
 
-        pro = parseInt(num1Txt.value) + parseInt(num2Txt.value);
+        pro = parseInt(num1Txt.value) * parseInt(num2Txt.value);
         resultTxt3.innerHTML = pro;
 
-        quo = parseInt(num1Txt.value) + parseInt(num2Txt.value);
+        quo = parseInt(num1Txt.value) / parseInt(num2Txt.value);
         resultTxt4.innerHTML = quo;
     }
 }

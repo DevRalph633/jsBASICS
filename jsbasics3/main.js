@@ -12,16 +12,29 @@ function updateDisplay() {
     
     elementTxt.innerHTML = arr.join("<br>");
 
-    
-    sum = arr.reduce((acc, num) => acc + num, 0);
+
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
     sumTxt.innerHTML = sum;
 
-    
-    const highest = Math.max(...arr);
+
+    let highest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > highest) {
+            highest = arr[i];
+        }
+    }
     highTxt.innerHTML = highest;
 
-    
-    const lowest = Math.min(...arr);
+
+    let lowest = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < lowest) {
+            lowest = arr[i];
+        }
+    }
     lowTxt.innerHTML = lowest;
 }
 
@@ -36,7 +49,7 @@ function concatenate() {
         inputTxt.value = ""; 
         updateDisplay(); 
     } else {
-        alert("Please enter a valid number.");
+        alert("invalid");
     }
 }
 
