@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Sample 2</title>
+</head>
+<body>
+    <h1>JS Exercise 2</h1>
+    <table>
+        <tr>
+            <td>
+                <label for="num1">First String:</label>
+            </td>
+            <td>
+                <input type="text" name="num1" id="num1" placeholder="Enter first string">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="num2">Second String:</label>
+            </td>
+            <td>
+                <input type="text" name="num2" id="num2" placeholder="Enter second string">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="num3">Third String:</label>
+            </td>
+            <td>
+                <input type="text" name="num3" id="num3" placeholder="Enter third string">
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="concatenate()">Concatenate</button>
+                <button onclick="clearEntries()">Clear Entries</button>
+            </td>
+        </tr>
+    </table>
+
+    <p style="font-weight: bold;">Concatenated Value:</p>
+    <span id="sum"></span>
+
+    <script src="main.js"></script>
+</body>
+</html>
